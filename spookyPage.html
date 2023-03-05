@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		h1{
+
+  			font-family: 'Gajraj One', cursive;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="container">
+	<h1 id="heading">THE BASEMENT</h1>
+	<p id="p1">i Knew i shouldn't go there , in that dank,cold little place .But i wanted to fund my friend</p><br>
+	<input type="button" id="firstbutton"Value="Get In The Mood" ondblclick="background()"><br>
+	Type your name here,if You dare: <input type="text" id="inputbox" onchange="audio()"><br>
+	<input type="button" value="Please dont click me" onclick="alertbox()"><br>
+	<input type="button" value="Tell me What happened" onclick="theend()">
+	</div>
+	<audio id="a1" src="http://reboot-me.com/ouch.mp3"></audio>
+
+	<script type="text/javascript">
+		function background(){
+			document.getElementById("container").style.backgroundColor="red"
+		}
+		function audio(){
+			
+			document.getElementById('a1').play()
+		}
+		function alertbox(){
+			var output=document.getElementById("inputbox").value
+			alert("Warning! "+ output)
+		}
+		function theend(){
+			document.getElementById("p1").textContent="The end"
+		}
+	</script>
+
+</body>
+</html>
